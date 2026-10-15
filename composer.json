@@ -1,0 +1,36 @@
+{
+  "name": "swordenkisk/parsel-pilot-laravel",
+  "description": "A configurable Laravel client for parcel and delivery API integrations.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/http": "^10.0 || ^11.0 || ^12.0",
+    "illuminate/support": "^10.0 || ^11.0 || ^12.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0 || ^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ParselPilot\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ParselPilot\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ParselPilot\\ParselPilotServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
